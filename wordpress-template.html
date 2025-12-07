@@ -1,0 +1,652 @@
+<!-- WordPress Page Template - Paste this into WordPress Page Editor (HTML mode) -->
+
+<!-- Essential Styles -->
+<style>
+/* Core WordPress/Elementor Styles */
+.elementor-element {
+    position: relative;
+}
+
+.e-con-boxed {
+    padding: 40px 20px;
+}
+
+.e-con-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.elementor-widget-container {
+    margin-bottom: 20px;
+}
+
+/* Heading Styles */
+.ekit-heading {
+    margin-bottom: 30px;
+}
+
+.elementskit-section-subtitle {
+    display: block;
+    color: #ff9900;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #ff9900;
+}
+
+.ekit-heading--title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #333;
+}
+
+.ekit-heading__description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 15px;
+}
+
+.elementor-heading-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Button Styles */
+.elementor-button-wrapper {
+    margin: 20px 0;
+}
+
+.elementor-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff9900;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.elementor-button:hover {
+    background: #e68a00;
+    transform: translateY(-2px);
+}
+
+.elementskit-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #ff9900;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.elementskit-btn:hover {
+    background: #e68a00;
+}
+
+/* Content Styles */
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 4px solid #ff9900;
+    background: #f9f9f9;
+}
+
+ol, ul {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image Carousel */
+.elementor-image-carousel-wrapper {
+    margin: 30px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide-image {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.elementor-image-carousel-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Table Styles */
+.eael-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.eael-data-table thead {
+    background: #ff9900;
+    color: #fff;
+}
+
+.eael-data-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.eael-data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.eael-data-table tr:hover {
+    background: #f9f9f9;
+}
+
+/* Divider */
+.elementor-divider {
+    border-top: 2px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Testimonials */
+.elementskit-testimonial-slider {
+    margin: 40px 0;
+}
+
+.swiper-slide-inner {
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.elementskit-stars {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.elementskit-stars svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffc107;
+}
+
+.elementskit-commentor-content {
+    font-style: italic;
+    margin: 15px 0;
+    color: #555;
+}
+
+.elementskit-author-name {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.elementskit-author-des {
+    color: #999;
+    font-size: 14px;
+}
+
+/* FAQ Styles */
+.elementskit-single-faq {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.elementskit-faq-header {
+    padding: 15px 20px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.elementskit-faq-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.elementskit-faq-body {
+    padding: 15px 20px;
+    background: #fff;
+}
+
+/* Contact Form */
+.contact-input-area {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: #ff9900;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact-input-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-input-li {
+    margin-bottom: 20px;
+}
+
+.input-full {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.text-area {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn input {
+    padding: 12px 40px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn input:hover {
+    background: #e68a00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ekit-heading--title {
+        font-size: 28px;
+    }
+    
+    .elementor-heading-title {
+        font-size: 22px;
+    }
+    
+    .e-con-boxed {
+        padding: 20px 15px;
+    }
+}
+</style>
+
+<!-- Main Content -->
+<div class="elementor elementor-6802">
+    
+    <!-- Hero Section -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <div class="elementor-element elementor-widget-elementskit-heading">
+                <div class="elementor-widget-container">
+                    <div class="ekit-wid-con">
+                        <div class="ekit-heading">
+                            <span class="elementskit-section-subtitle">Premium Airport Cab Service</span>
+                            <h1 class="ekit-heading--title">Kochi airport to Guruvayur</h1>
+                            <div class='ekit-heading__description'>
+                                <p>Enjoy a smooth Kochi Airport to Guruvayoor taxi with Tour With Anand. Clean AC cabs, safe drivers, and on-time pickup, available 24×7.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="elementor-button-wrapper">
+                <a class="elementor-button" href="https://wa.me/919400620615?text=Hi+Anand%2C+Need+taxi+from+kochi+airport+to+guruvayoor">
+                    <span class="elementor-button-text">Book Now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Service Highlights -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <div class="elementor-widget-elementskit-heading">
+                <div class="elementor-widget-container">
+                    <div class="ekit-wid-con">
+                        <div class="ekit-heading">
+                            <span class="elementskit-section-subtitle">Airport Travel Made Easy</span>
+                            <h2 class="ekit-heading--title">Why Our Kochi Airport Taxi Service Stands Out</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="elementor-widget-text-editor">
+                <div class="elementor-widget-container">
+                    <p style="text-align: justify;"><span style="color: #333300;">Travellers value <strong>prompt pickup, reliable service, clear communication, comfortable rides, and transparent pricing</strong>. With Tour With Anand, every airport transfer is designed to be smooth, safe, and completely stress-free.</span></p>
+                    
+                    <blockquote>
+                        <h4 style="text-align: left;"><span style="text-decoration: underline;"><span style="color: #333300;">Key Highlights of Our Service</span></span></h4>
+                    </blockquote>
+                    
+                    <ol>
+                        <li>Managed personally by Anand</li>
+                        <li>Prompt airport pickup or dropoff</li>
+                        <li>Clean AC vehicles</li>
+                        <li>Professional and friendly drivers</li>
+                        <li>Clear communication & updates</li>
+                        <li>Fixed pricing with no surprises</li>
+                        <li>Safe, stress-free travel</li>
+                        <li>One-way, round-trip & tour options</li>
+                    </ol>
+                    
+                    <p><em>Whether you're a solo traveller, a family with luggage, or a business professional in need of a punctual ride, this package ensures peace of mind from the moment you step out of the terminal.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <div class="elementor-divider">
+                <span class="elementor-divider-separator"></span>
+            </div>
+            
+            <h2 class="elementor-heading-title">Why Choose Tour with Anand for Your Airport Transfer?</h2>
+            
+            <div class="elementor-widget-text-editor">
+                <div class="elementor-widget-container">
+                    <p>We are not just another cab service provider. With <span style="text-decoration: underline; color: #ff9900;"><strong>Tour with Anand</strong></span>, you get the reassurance of a travel brand trusted since 2009. Our airport taxi offering is built on years of <strong>customer-first service</strong>, helping both domestic and international travellers navigate Kochi with ease.</p>
+                </div>
+            </div>
+            
+            <h2 class="elementor-heading-title">About the Operator</h2>
+            
+            <div class="elementor-widget-text-editor">
+                <div class="elementor-widget-container">
+                    <p>Your trip is coordinated by <span style="color: #ff9900;"><strong>Anand</strong></span>, an experienced local operator known for reliable communication and smooth arrangements. He ensures every booking is handled with care from airport pickup to final drop.</p>
+                </div>
+            </div>
+            
+            <div class="elementor-widget-image">
+                <div class="elementor-widget-container">
+                    <img width="768" height="815" src="https://tourwithanand.com/wp-content/uploads/2025/06/hero-image3-e1757506779377-768x815.png" alt="Tour with Anand" />
+                </div>
+            </div>
+            
+            <!-- Vehicle Options -->
+            <div class="elementor-element">
+                <h6 class="elementor-heading-title">Anand's Garage of Choices</h6>
+                <h2 class="elementor-heading-title">Explore Our Taxi Options & Fixed Fares</h2>
+                
+                <div class="elementor-button-wrapper">
+                    <a class="elementor-button" href="http://wa.me/919400620615">
+                        <span class="elementor-button-text">Book Your Cab</span>
+                    </a>
+                </div>
+                
+                <!-- Fare Table -->
+                <div class="eael-data-table-wrap">
+                    <table class="eael-data-table">
+                        <thead>
+                            <tr class="table-header">
+                                <th><span class="data-table-header-text">Vehicle Type</span></th>
+                                <th><span class="data-table-header-text">One Way Fare</span></th>
+                                <th><span class="data-table-header-text">Round Trip Fee</span></th>
+                                <th><span class="data-table-header-text">Extra Km</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p><span style="color: #333333;">Hatchback</span></p></td>
+                                <td><p><span style="color: #000000;">₹3500</span></p></td>
+                                <td><p><span style="color: #000000;">₹4000</span></p></td>
+                                <td><p><span style="color: #000000;">₹15/km</span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><span style="color: #333333;">Sedan</span></p></td>
+                                <td><p><span style="color: #000000;">₹4000</span></p></td>
+                                <td><p><span style="color: #000000;">₹4500</span></p></td>
+                                <td><p><span style="color: #000000;">₹16/km</span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><span style="color: #333333;">Ertiga</span></p></td>
+                                <td><p><span style="color: #000000;">₹4500</span></p></td>
+                                <td><p><span style="color: #000000;">₹5000</span></p></td>
+                                <td><p><span style="color: #000000;">₹18/km</span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><span style="color: #333333;">Innova</span></p></td>
+                                <td><p><span style="color: #000000;">₹5000</span></p></td>
+                                <td><p><span style="color: #000000;">₹5500</span></p></td>
+                                <td><p><span style="color: #000000;">₹20/km</span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><span style="color: #333333;">Innova Crysta</span></p></td>
+                                <td><p><span style="color: #000000;">₹6000</span></p></td>
+                                <td><p><span style="color: #000000;">₹6500</span></p></td>
+                                <td><p><span style="color: #000000;">₹22/km</span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><span style="color: #333333;">Tempo Traveller (9-26 Seater)</span></p></td>
+                                <td><p><span style="color: #000000;">Contact Directly</span></p></td>
+                                <td><p><span style="color: #000000;">Contact Directly</span></p></td>
+                                <td><p><span style="color: #000000;">—</span></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Booking Process -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <div class="elementor-divider">
+                <span class="elementor-divider-separator"></span>
+            </div>
+            
+            <h2 class="elementor-heading-title">How to Book Your Kochi Airport to Guruvayoor Taxi</h2>
+            
+            <div class="elementor-widget-text-editor">
+                <div class="elementor-widget-container">
+                    <h6><strong>1. Call or WhatsApp Us</strong></h6>
+                    <p>Share your Kochi Airport to Guruvayoor trip details—pickup date, time, <strong>and your flight number</strong>.</p>
+                    
+                    <h6><strong>2. Receive Fare & Vehicle Options</strong></h6>
+                    <p>We'll instantly send the fixed fare along with the best vehicle options for your journey.</p>
+                    
+                    <h6><strong>3. Confirm Your Booking</strong></h6>
+                    <p>Reply "OK" on WhatsApp or confirm over the phone—no advance payment required.</p>
+                    
+                    <h6><strong>4. Driver Assigned & Flight Tracking</strong></h6>
+                    <p>Once confirmed, we'll assign your driver. Using your <strong>flight number</strong>, we track delays or early arrivals to adjust pickup time automatically.</p>
+                    
+                    <h6><strong>5. Smooth Airport Pickup</strong></h6>
+                    <p>Your driver meets you at the Kochi Airport arrival area and ensures a safe, comfortable ride to Guruvayoor.</p>
+                </div>
+            </div>
+            
+            <div class="elementor-widget-image">
+                <div class="elementor-widget-container">
+                    <img width="828" height="1069" src="https://tourwithanand.com/wp-content/uploads/2025/12/Kochi-Airport-To-Guruvayoor-Taxi.jpg" alt="Kochi Airport to Guruvayoor taxi service" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pickup Point Info -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <h2 class="elementor-heading-title">Taxi Pickup Point at Kochi Airport</h2>
+            
+            <div class="elementor-widget-text-editor">
+                <div class="elementor-widget-container">
+                    <p><span style="color: #000000;">Cochin International Airport (CIAL) is one of India's busiest international gateways. The taxi pickup point is located just outside the arrival terminal. With Tour with Anand, you don't have to figure it out alone – our drivers will guide you to the right location.</span></p>
+                    
+                    <p><span style="color: #000000;"><strong>Domestic Arrivals:</strong> Meet at the designated taxi zone outside Terminal 1.</span></p>
+                    
+                    <p><span style="color: #000000;"><strong>International Arrivals:</strong> Driver will wait outside Terminal 3 with signage if needed.</span></p>
+                    
+                    <p><span style="color: #000000;"><strong>Clear communication:</strong> You'll receive a call/WhatsApp from the driver as soon as your flight lands.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="elementor-element e-con-boxed e-con" style="background: #f5f5f5;">
+        <div class="e-con-inner">
+            <div class="elementor-widget-elementskit-heading">
+                <div class="elementor-widget-container">
+                    <div class="ekit-wid-con">
+                        <div class="ekit-heading">
+                            <h2 class="ekit-heading--title">Ready for a smooth, affordable ride to Guruvayoor?</h2>
+                            <h3 class="ekit-heading--subtitle">Limited Offer ₹3500/- onwards</h3>
+                            <div class='ekit-heading__description'>
+                                <p>Book your <strong>Kochi Airport to Guruvayoor taxi</strong> with Tour With Anand today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ekit-btn-wraper">
+                <a href="http://wa.me/919400620615?text=Hi+Anand%2C+I+need+a+taxi+from+Kochi+Airport+to+Guruvayoor" class="elementskit-btn">
+                    Book on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="elementor-element e-con-boxed e-con">
+        <div class="e-con-inner">
+            <h2 class="elementor-heading-title">Frequently Asked Questions</h2>
+            
+            <div class="ekit-wid-con">
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">How long does it take from Kochi Airport to Guruvayoor?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        The travel time from Kochi Airport to Guruvayoor is usually 1 hour 45 minutes to 2 hours, depending on traffic.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">What is the taxi fare from Kochi Airport to Guruvayoor?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        We offer fixed and transparent fares for Kochi Airport to Guruvayoor, starting from ₹2299 onwards, with no hidden charges.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">Do you provide one-way and round trips to Guruvayoor?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        Yes. You can book one-way, round-trip, or a customized trip from Kochi Airport to Guruvayoor.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">Will I receive driver details before the trip?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        Yes. Before your pickup, you will get the driver's name, contact number, and vehicle details for your Kochi Airport to Guruvayoor journey.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">Can I book a Tempo Traveller for Guruvayoor?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        Absolutely. We offer Sedan, SUV, Innova, Crysta, and Tempo Traveller options based on your group size for Guruvayoor trips.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">Do you track flight delays before pickup?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        Yes. Share your flight number, and we will track delays or early arrivals and adjust the pickup time accordingly.
+                    </div>
+                </div>
+                
+                <div class="elementskit-single-faq">
+                    <div class="elementskit-faq-header">
+                        <h2 class="elementskit-faq-title">Is the journey to Guruvayoor safe for families and elderly passengers?</h2>
+                    </div>
+                    <div class="elementskit-faq-body">
+                        Yes. Our experienced and polite drivers ensure a safe, smooth, and comfortable ride to Guruvayoor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Instructions for WordPress -->
+<!--
+TO USE THIS TEMPLATE IN WORDPRESS:
+
+1. Go to Pages > Add New (or edit existing page)
+2. Switch to "Text" or "HTML" editor mode (not Visual)
+3. Copy and paste all the content above
+4. Update/Publish the page
+5. View the page to see the styled content
+
+NOTES:
+- All styles are self-contained
+- Works with most WordPress themes
+- Compatible with Elementor-based sites
+- Update WhatsApp links and images as needed
+- Customize colors by changing hex values in the style section
+-->
